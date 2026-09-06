@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>بريف دولاب · احكِ لنا عن مشروعك</title>
+  <meta name="description" content="بريف عملاء وكالة دولاب الإبداعية — الهوية والتصميم، التسويق، التقنية. يأخذ ٥-٨ دقائق." />
+  <meta name="author" content="دولاب · Doolab" />
+  <meta name="theme-color" content="#24205d" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+
+  <!-- معاينة الرابط عند المشاركة (واتساب / تويتر / لينكدإن) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="دولاب · Doolab" />
+  <meta property="og:locale" content="ar_SA" />
+  <meta property="og:title" content="بريف دولاب · احكِ لنا عن مشروعك" />
+  <meta property="og:description" content="من وكالة دولاب الإبداعية — جاوب بصدق وعلى راحتك، وخلّ الباقي علينا. يأخذ ٥-٨ دقائق." />
+  <meta property="og:url" content="https://doolab-sa.github.io/brief/" />
+  <meta property="og:image" content="https://doolab-sa.github.io/brief/assets/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="بريف دولاب — الهوية، التسويق، التقنية" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- خلفية الباترن -->
+  <div class="bg-mark" aria-hidden="true"></div>
+
+  <!-- شريط التقدّم -->
+  <div class="progress" id="progress"><div class="progress__bar" id="progressBar"></div></div>
+
+  <!-- ترويسة -->
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/logo-mark.png" alt="دولاب" class="brand__mark" />
+      <span class="brand__name">دولاب</span>
+    </div>
+    <div class="topbar__count" id="counter"></div>
+  </header>
+
+  <!-- منطقة الأسئلة -->
+  <main class="stage" id="stage"></main>
+
+  <!-- شريط التنقّل السفلي -->
+  <footer class="navbar" id="navbar" hidden>
+    <button class="nav-btn nav-btn--ghost" id="backBtn" type="button" aria-label="السابق">
+      <svg viewBox="0 0 24 24" width="20" height="20"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>السابق</span>
+    </button>
+    <div class="navbar__spacer"></div>
+    <button class="nav-btn nav-btn--skip" id="skipBtn" type="button" hidden>تخطّي</button>
+    <button class="nav-btn nav-btn--primary" id="nextBtn" type="button">
+      <span id="nextLabel">متابعة</span>
+      <span class="nav-btn__kbd">↵</span>
+    </button>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
